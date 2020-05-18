@@ -1,6 +1,6 @@
 # 插件开发框架说明
 
-**一、工程的整体结构如下：**
+## 一、工程的整体结构如下
 
 ```
 |- pipeline-plugin
@@ -8,11 +8,13 @@
     |- demo    插件样例，你可以把工程项目名和内部逻辑修改成你自定义的
 ```
 
-**二、如何开发插件：**
+## 二、如何开发插件
+
+插件代码统一管理，放在 [ci-plugins](https://github.com/ci-plugins) 下
 
 请参考 [plugin-demo-java](https://github.com/ci-plugins/plugin-demo-java)
 
-**三、如何打成研发商店要求的zip包：**
+## 三、如何打成研发商店要求的zip包：
 
  1、进入pipeline-plugin目录下执行"mvn clean package"命令进行打包。
 
