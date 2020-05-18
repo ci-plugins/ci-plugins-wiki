@@ -46,6 +46,7 @@
 
 | 属性名 | 属性说明 | 格式 | 备注 |
 | ---- | ---- | ---- | ---- |
+| packagePath | 发布包中插件执行包的相对路径 | 字符串 | 必填，包括执行包包名，执行时，下载发布包解压后，将根据此项配置找到执行包 |
 | language | 开发语言 | 字符串| 必填，如python、java等，和插件初始化时指定的语言一致 |
 | demands | 执行依赖 | 数组| 非必填 |
 | target | 执行入口 | 字符串 | 必填，一般为一个命令行可执行的命令 |
@@ -311,6 +312,7 @@
     "required": true
 }
 ```
+![](../assets/vuex-input.png)
 
 - 人名选择器
 
@@ -332,6 +334,8 @@
     "desc": "XXX"
 }
 ```
+
+![](../assets/atom-checkbox.png)
 
 - selector/select-input/devops-select
   - 选项列表在task.json中配置
@@ -423,6 +427,8 @@
 }
 ```
 
+![](../assets/atom-checkbox-list.png)
+
 - time-picker
 日期选择器
 
@@ -435,6 +441,8 @@
     "showTime": false
 }
 ```
+
+![](../assets/time-picker.png)
 
 - tips
 提示信息
