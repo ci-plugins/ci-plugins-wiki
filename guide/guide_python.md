@@ -12,7 +12,7 @@
     |- ${你的插件标识}         # 插件包名
         |- __init__.py py     # py包标识
         |- command_line.py    # 命令入口文件
-        |- python_atom_sdk.py # 插件开发SDK
+    |- python_atom_sdk        # 插件开发SDK包
     |- MANIFEST.in            # 包文件类型申明
     |- requirements.txt       # 依赖申明
     |- setup.py               # 执行包打包配置
