@@ -192,9 +192,9 @@
 
     ```
     "tipTest": {
-      "label": "",
-      "type": "tips",
-      "tipStr": "这是个XXX系统，欢迎体验。[点击查看](http://www.baidu.com)"
+         "label": "",
+         "type": "tips",
+         "tipStr": "这是个XXX系统，欢迎体验。[点击查看](http://www.baidu.com)"
     }
     ```
 
