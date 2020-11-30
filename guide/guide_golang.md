@@ -21,7 +21,7 @@
 
 - 创建插件代码工程
 
-  插件代码统一管理，放在 [ci-plugins](https://github.com/ci-plugins) 下
+  插件代码建议统一管理。通用的开源插件可以放到 [ci-plugins](https://github.com/ci-plugins) 下
 - 实现插件功能
 - 规范：
   - [插件开发规范](../specification/plugin_dev.md)
