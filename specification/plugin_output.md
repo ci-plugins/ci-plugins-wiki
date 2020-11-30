@@ -8,8 +8,10 @@
 
 ```json
 {
-    "status": "",      # 插件执行结果，值可以为success、failure、error
+    "status": "",      # 插件执行结果，值可以为success、failure
     "message": "",     # 插件执行结果说明，支持markdown格式
+    "errorType": 3,    # 插件错误类型，int, 1表示是用户用法（参数不合法等等），2表示依赖的第三方平台问题，3表示是插件逻辑问题
+    "errorCode": 0,    # 插件错误码，int，用于后续根据错误码分析插件质量
     "type": "default", # 产出数据模板类型，用于规定产出数据的解析入库方式。目前支持default、quality
     "data": {          # default模板的数据格式如下所示，各输出字段应先在task.json中定义
         "outVar_1": {
@@ -31,3 +33,14 @@
     }
 }
 ```
+
+- 产出data中的数据类型支持三类：
+  - string：字符串
+    - 长度不能超过4k字符
+  - artifact：构件
+    - 支持多个构件
+    - 每个构件指定本地绝对路径
+  - report：报告
+    - 报告有两种类型：内置报告、第三方链接
+    - 报告文件不建议直接放在根目录下，如果根目录下其他文件，如代码库之类的，会把所有文件都当作报告的相关文件上传。
+    建议创建个目录来存，比如，path=${WORKSPACE}/report， target=result_report.html

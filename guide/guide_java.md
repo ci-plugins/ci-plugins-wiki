@@ -10,7 +10,7 @@
 
 ## 二、如何开发插件
 
-插件代码统一管理，放在 [ci-plugins](https://github.com/ci-plugins) 下
+ 插件代码建议统一管理。通用的开源插件可以放到 [ci-plugins](https://github.com/ci-plugins) 下
 
 请参考 [plugin-demo-java](https://github.com/ci-plugins/plugin-demo-java)
 
