@@ -146,6 +146,13 @@
     }
     ```
 
+    - bkci服务链接，可以使用浏览器开发者助手抓取，常用的链接如下：
+      - 凭证： /ticket/api/user/credentials/{projectId}/hasPermissionList?permission=USE&page=1&pageSize=100&credentialTypes=USERNAME_PASSWORD
+        - credentialTypes 取值参见[CredentialType](https://github.com/Tencent/bk-ci/blob/master/src/backend/ci/core/ticket/api-ticket/src/main/kotlin/com/tencent/devops/ticket/pojo/enums/CredentialType.kt)
+      - 代码库：/repository/api/user/repositories/{projectId}/hasPermissionList?permission=USE&repositoryType=CODE_GIT&page=1&pageSize=5000
+        - repositoryType 取值参见[ScmType](https://github.com/Tencent/bk-ci/blob/master/src/backend/ci/core/common/common-api/src/main/kotlin/com/tencent/devops/common/api/enums/ScmType.kt)
+      - 节点：/environment/api/user/envnode/{projectId}/listUsableServerNodes?page=1&pageSize=100
+
   - options：下拉框列表项定义
 
     ```
