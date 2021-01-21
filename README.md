@@ -16,3 +16,7 @@
 - [Python 插件开发指引](./guide/guide_python.md)
 - [Golang 插件开发指引](./guide/guide_golang.md)
 - [Nodejs 插件开发指引](./guide/guide_nodejs.md)
+
+<br/>
+
+- [插件自定义UI指引](./specification/plugin_custom_ui.md)
