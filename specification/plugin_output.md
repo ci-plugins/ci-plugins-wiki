@@ -12,7 +12,7 @@
     "message": "",     # 插件执行结果说明，支持markdown格式
     "errorType": 3,    # 插件错误类型，int, 1表示是用户用法（参数不合法等等），2表示依赖的第三方平台问题，3表示是插件逻辑问题
     "errorCode": 0,    # 插件错误码，int，用于后续根据错误码分析插件质量
-    "type": "default", # 产出数据模板类型，用于规定产出数据的解析入库方式。目前支持default、quality
+    "type": "default", # 产出数据模板类型，用于规定产出数据的解析入库方式。目前支持default
     "data": {          # default模板的数据格式如下所示，各输出字段应先在task.json中定义
         "outVar_1": {
             "type": "string",
@@ -26,7 +26,7 @@
             "type": "report",
             "reportType": "", # 报告类型 INTERNAL 内置报告， THIRDPARTY 第三方链接， 默认为INTERNAL
             "label": "",      # 报告别名，用于产出物报告界面标识当前报告
-            "path": "",       # reportType=INTERNAL时，报告目录所在绝对路径
+            "path": "",       # reportType=INTERNAL时，报告目录所在绝对路径。注意规划报告路径，目录下的所有内容将视为报告关联文件一起存档
             "target": "",     # reportType=INTERNAL时，报告入口文件名称
             "url": ""         # reportType=THIRDPARTY时，报告链接，当报告可以通过url访问时使用
         }

@@ -109,7 +109,24 @@
 
 #### 针对不同type的组件，有个性化的属性
 
-##### 1、复选框（布尔）：type = atom-checkbox
+##### 1、单行文本框：type=vuex-input
+
+- 组件属性：
+  - inputType：当输入的字符串希望展示成******方式时使用，值为 password
+
+- 示例：
+  - 配置
+
+    ```json
+    "fieldName": {
+        "label": "密码输入框",
+        "type": "vuex-input",
+        "inputType": "password",
+        "desc": "XXX"
+    }
+    ```
+
+##### 2、复选框（布尔）：type = atom-checkbox
 
 - 组件属性：
   - text：此时label可设置为空，对应值为true/false
@@ -126,7 +143,7 @@
     }
     ```
 
-##### 2、下拉框/可输入下拉框：type = selector/select-input/devops-select
+##### 3、下拉框/可输入下拉框：type = selector/select-input/devops-select
 
 - 组件属性：
   - optionsConf：下拉框属性配置
@@ -166,7 +183,7 @@
     ]
     ```
 
-##### 3、单选： type = enum-input
+##### 4、单选： type = enum-input
 
 - 组件属性：
   - list
@@ -180,14 +197,14 @@
     ]
   ```
 
-##### 4、日期选择器：type=time-picker
+##### 5、日期选择器：type=time-picker
 
 - 组件属性：
   - startDate：时间戳，毫秒，开始日期
   - endDate：时间戳，毫秒，结束日期
   - showTime：布尔，是否显示时间
 
-##### 5、提示信息：tips
+##### 6、提示信息：tips
 
 - 组件属性：
   - tipStr：提示信息内容模版
@@ -205,7 +222,7 @@
     }
     ```
 
-##### 6、不定参数列表：parameter
+##### 7、不定参数列表：parameter
 
 - 组件属性：
   - paramType：数据从链接动态获取或者从定义列表中获取，可选值为：url、list
@@ -233,7 +250,7 @@
     | valueDisable | 是否可编辑 | 布尔 | true、false |
     | valueMultiple | 是否可多选 | 布尔 | true、false |
 
-##### 7、复选框列表： type=atom-checkbox-list
+##### 8、复选框列表： type=atom-checkbox-list
 
 - 组件属性：
   - list
@@ -247,7 +264,7 @@
     }]
     ```
 
-##### 8、代码编辑框：atom-ace-editor
+##### 9、代码编辑框：atom-ace-editor
 
 - 组件属性：
   - bashConf
@@ -261,7 +278,7 @@
     "lang": "sh"       # 目前支持高亮语法 json|python|sh|text|powershell|batchfile
     ```
 
-##### 9、人名选择器：user-input
+##### 10、人名选择器：user-input
 
 - 组件属性：
   - inputType：可输入的数据类型，可选值为email 、rtx 、all
@@ -525,7 +542,7 @@
 - 由输入字段定义中的rely属性来指定，rely有两个属性：
   - operation：多条件之间的关系，与、或、非
   - expression：条件表达式
-- operation 字段支持三个值： 
+- operation 字段支持三个值：
   - AND
   - OR
   - NOT
