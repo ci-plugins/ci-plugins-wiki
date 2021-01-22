@@ -9,6 +9,7 @@
 - [插件配置规范](./specification/plugin_config.md)
 - [插件输出规范](./specification/plugin_output.md)
 - [插件错误码规范](./specification/plugin_output_error.md)
+- [插件发布规范](./specification/plugin_release.md)
 
 ## 指引
 
@@ -16,3 +17,7 @@
 - [Python 插件开发指引](./guide/guide_python.md)
 - [Golang 插件开发指引](./guide/guide_golang.md)
 - [Nodejs 插件开发指引](./guide/guide_nodejs.md)
+
+<br/>
+
+- [插件自定义UI指引](./specification/plugin_custom_ui.md)
