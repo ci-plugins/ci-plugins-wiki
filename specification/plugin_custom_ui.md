@@ -26,9 +26,8 @@
 	- 进到 bk-frontend 目录下
     - 将框架代码 [bkci-customAtom-frontend](https://github.com/ci-plugins/bkci-customAtom-frontend) 拷贝到当前目录下
 	- 执行 npm install
-	- 执行 npm run dev
-<br/>
-此时打开浏览器打开 http://localhost:8001, 即可看到我们内置的简单demo工程的效果
+	- 执行 npm run dev 
+      此时打开浏览器打开 http://localhost:8001, 即可看到我们内置的简单demo工程的效果
 + 3、开发：
 	- 配置 bk-frontend/data 目录下的 [task.json](http://iwiki.oa.com/pages/viewpage.action?pageId=15009001)
 	- 在 Atom.vue 里开发插件业务逻辑（具体开发注意事项见下面插件业务逻辑开发介绍）
@@ -83,8 +82,8 @@ package.json 提供了两个打包命令
 插件调试好之后，通过研发商店工作台进行发布，发布包准备过程如下：<br/>
 
 1. 执行 npm run public 打包
-2. 在发布包（参见各语言开发指引）根目录下创建名为 frontend 的目录
-3. 将打包结果文件( dist 目录下的所有文件) frontend 目录下
+2. 在发布包根目录下创建名为 frontend 的目录 [发布包规范](plugin_release.md)
+3. 将打包结果文件( dist 目录下的所有文件)拷贝到 frontend 目录下
 4. 将发布包根目录下的所有文件打成 zip 文件，通过工作台上传到商店
 
 ## 常见问题
